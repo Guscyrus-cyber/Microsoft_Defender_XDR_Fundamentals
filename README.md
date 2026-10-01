@@ -1,10 +1,10 @@
 ### Explore Microsoft Defender XDR — SOC Analyst Fundamentals
 
-Step 1 — Open Microsoft Defender XDR**
+Step 1 — Open Microsoft Defender XDR
 
- I open a new browser tab**, and enter: [<u>https://security.microsoft.com</u>](https://security.microsoft.com) . I Sign in with my administrator account defenderadmin@... I successfully opened the Microsoft Defender portal. The message **“Your unified SIEM and XDR is ready”** confirms that my Microsoft Sentinel environment is integrated into the unified Defender experience. (Image 1)
+ I open a new browser tab, and enter: [<u>https://security.microsoft.com</u>](https://security.microsoft.com) . I Sign in with my administrator account defenderadmin@... I successfully opened the Microsoft Defender portal. The message **“Your unified SIEM and XDR is ready”** confirms that my Microsoft Sentinel environment is integrated into the unified Defender experience. (Image 1)
 
-Step 2 — Expand the navigation menu**
+Step 2 — Expand the navigation menu
 
 I Click Show navigation.The complete Defender XDR navigation is now visible. This confirms that my tenant includes the unified Microsoft Sentinel and Defender experience.
 
@@ -19,16 +19,16 @@ Email & collaboration: Email threats and Microsoft Defender for Office 365.\
 Cloud security: Cloud resources and workloads.\
 Advanced hunting: KQL-based investigation across security data. (Image 2)
 
-Step 3 — Examine the incident workspace**
+Step 3 — Examine the incident workspace
 
 I Click the arrow beside Investigation & response to expand it. Investigation & response contains four groups:
 
 Incidents & alerts:** SOC alert queue and correlated investigations.
 **Hunting:** Proactive threat hunting using KQL.\
 **Actions & submissions:** Response actions, automated investigations, and submitted files/URLs.\
-**Partner catalog:** Integrated security products and services. (Image 3)\
+**Partner catalog:** Integrated security products and services. (Image 3)
 
-Step 4 — Open the incident options**
+Step 4 — Open the incident options
 
 I Click the arrow beside **Incidents & alerts** to expand it. I will distinguish an **alert** from an **incident** before opening the queue.
 

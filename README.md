@@ -1,46 +1,45 @@
-### Explore Microsoft Defender XDR — SOC Analyst Fundamentals\
+### Explore Microsoft Defender XDR — SOC Analyst Fundamentals
 
-**Step 1 — Open Microsoft Defender XDR**
+Step 1 — Open Microsoft Defender XDR**
 
- I Open a **new browser tab**, and enter: [<u>https://security.microsoft.com</u>](https://security.microsoft.com) . I Sign in with my administrator account defenderadmin@... I successfully opened the **Microsoft Defender portal**. The message **“Your unified SIEM and XDR is ready”** confirms that my Microsoft Sentinel environment is integrated into the unified Defender experience. (Image 1)
+ I open a new browser tab**, and enter: [<u>https://security.microsoft.com</u>](https://security.microsoft.com) . I Sign in with my administrator account defenderadmin@... I successfully opened the Microsoft Defender portal. The message **“Your unified SIEM and XDR is ready”** confirms that my Microsoft Sentinel environment is integrated into the unified Defender experience. (Image 1)
 
-**Step 2 — Expand the navigation menu**
+Step 2 — Expand the navigation menu**
 
 I Click Show navigation.The complete Defender XDR navigation is now visible. This confirms that my tenant includes the unified Microsoft Sentinel and Defender experience.
 
 The important SOC areas are:
 
-**Exposure management:** Security posture, vulnerabilities, weaknesses, and recommendations.\
-**Investigation & response:** Incidents, alerts, and investigation workflows.\
-**Threat intelligence:** Information about threat actors, campaigns, indicators, and infrastructure.\
-**Assets:** Devices, users, identities, applications, and other protected entities.\
-**Microsoft Sentinel:** SIEM data, analytics, automation, workbooks, and configuration.\
-**Email & collaboration:** Email threats and Microsoft Defender for Office 365.\
-**Cloud security:** Cloud resources and workloads.\
-**Advanced hunting:** KQL-based investigation across security data. (Image 2)
+Exposure management: Security posture, vulnerabilities, weaknesses, and recommendations.\
+Investigation & response: Incidents, alerts, and investigation workflows.\
+Threat intelligence: Information about threat actors, campaigns, indicators, and infrastructure.\
+Assets:** Devices, users, identities, applications, and other protected entities.\
+**Microsoft Sentinel: SIEM data, analytics, automation, workbooks, and configuration.\
+Email & collaboration: Email threats and Microsoft Defender for Office 365.\
+Cloud security: Cloud resources and workloads.\
+Advanced hunting: KQL-based investigation across security data. (Image 2)
 
-
-**Step 3 — Examine the incident workspace**
+Step 3 — Examine the incident workspace**
 
 I Click the arrow beside Investigation & response to expand it. Investigation & response contains four groups:
 
-### **Incidents & alerts:** SOC alert queue and correlated investigations.
+Incidents & alerts:** SOC alert queue and correlated investigations.
 **Hunting:** Proactive threat hunting using KQL.\
 **Actions & submissions:** Response actions, automated investigations, and submitted files/URLs.\
 **Partner catalog:** Integrated security products and services. (Image 3)\
 
-**Step 4 — Open the incident options**
+Step 4 — Open the incident options**
 
 I Click the arrow beside **Incidents & alerts** to expand it. I will distinguish an **alert** from an **incident** before opening the queue.
 
-**There are two primary SOC queues:**
+There are two primary SOC queues:
 
 **Alert:** One detection indicating potentially suspicious or malicious activity—for example, suspicious PowerShell execution or repeated failed sign-ins.\
 **Incident:** A larger investigation case that correlates one or more related alerts, affected assets, users, evidence, and activity into a single attack story. A Tier 1 analyst usually begins with the Incidents queue, reviews its severity and evidence, determines whether it is a true or false positive, and then documents, escalates, or resolves it. (Image 4)\
 
-**Step 5 — Open the incidents queue**
+Step 5 — Open the incidents queue
 
-I Click **Incidents**. This is read-only exploration for now. The incident queue is working correctly. It currently shows 0 incidents, but that does not mean the portal is malfunctioning.\
+I Click **Incidents**. This is read-only exploration for now. The incident queue is working correctly. It currently shows 0 incidents, but that does not mean the portal is malfunctioning.
 
 The active view is limited by:
 
@@ -49,7 +48,8 @@ The active view is limited by:
 **Severity:** High, Medium, and Low\
 Informational or resolved incidents are excluded. The horizontally scrollable columns show the information analysts use for triage, including:
 
-### Incident name and ID
+Incident name and ID
+
 Severity and priority\
 Investigation state\
 Categories and impacted assets\
@@ -58,9 +58,9 @@ Detection/service source\
 Assigned analyst\
 Classification and determination\
 Creation and update times\
-Sentinel workspace (images 5, 6, 7, 8, and 9)\
+Sentinel workspace (images 5, 6, 7, 8, and 9)
 
-**Step 6 — Examine the alerts queue**
+Step 6 — Examine the alerts queue
 
 I Click **Alerts**.The Alerts page is also functioning correctly and currently shows **0 alerts**.
 
@@ -71,7 +71,8 @@ The current filter only includes **New** and **In progress** alerts.\
 My tenant has not yet produced Defender XDR detections for endpoint, email, identity, or cloud activity.\
 The columns demonstrate how alerts are triaged:
 
-### **Alert name**
+ Alert name
+
 **Category**\
 **Severity**\
 **Status and investigation state**\
@@ -80,9 +81,9 @@ The columns demonstrate how alerts are triaged:
 **First and last activity**\
 **Classification and determination**\
 **Assigned analyst**\
-**Sentinel workspace** (Images 10, 11, and 12)\
+**Sentinel workspace** (Images 10, 11, and 12)
 
-**Step 7 — Explore protected assets**
+Step 7 — Explore protected assets
 
 I Click the arrow beside **Assets**.
 
@@ -92,7 +93,7 @@ I Click the arrow beside **Assets**.
 **AI agents:** Inventory and security visibility for AI agents.
 There is currently no Devices option. This is expected because Microsoft Defender for Endpoint has not yet been provisioned and no endpoint has been onboarded. After the MDE setup and onboarding lab, the device inventory should become available, allowing analysts to inspect device risk, exposure level, health, logged-on users, alerts, and timelines. (Image 13)
 
-**Step 8 — Explore the hunting workspace**
+Step 8 — Explore the hunting workspace
 
 Under **Investigation & response**, I click the arrow beside **Hunting** to expand it. I will only inspect the hunting interface—no query is required yet.
 
@@ -105,7 +106,7 @@ This is the important relationship:
 
 **Advanced hunting query → suspicious results validated → custom detection rule → alert → incident** (Image 14)
 
-**Step 9 — Open Advanced hunting**
+Step 9 — Open Advanced hunting
 
 I Click **Advanced hunting**. This is the unified **Advanced hunting** workspace.
 
@@ -126,7 +127,7 @@ The visible schema already includes tables for:
 
 After MDE onboarding, endpoint tables such as DeviceInfo, DeviceProcessEvents, DeviceNetworkEvents, DeviceFileEvents, and DeviceLogonEvents should become available. Those tables will support the later suspicious-process, PowerShell, malware, and device-timeline labs. (Image 15)
 
-**Step 10 — Examine the Sentinel integration**
+Step 10 — Examine the Sentinel integration
 
 I Click the arrow beside **Microsoft Sentinel**. This confirms that Microsoft Sentinel is available directly inside the Defender portal. Its functions are grouped as:
 
@@ -138,7 +139,7 @@ I Click the arrow beside **Microsoft Sentinel**. This confirms that Microsoft Se
 **Defender XDR** correlates detections across endpoints, identities, email, applications, and cloud services.\
 **Microsoft Sentinel** adds SIEM capabilities, including broader log ingestion, analytics rules, automation, workbooks, and long-term investigation. The unified portal allows their alerts and incidents to be investigated from a common SOC queue. (Image 16)
 
-**Step 11 — Inspect Sentinel threat-management tools**
+Step 11 — Inspect Sentinel threat-management tools
 
 I Click the arrow beside **Threat management** under Microsoft Sentinel.
 
@@ -156,7 +157,7 @@ The Sentinel Hunting and Defender Advanced Hunting both use KQL, but they focus 
 **Sentinel Hunting:** SIEM data ingested into the Log Analytics workspace from Microsoft and third-party sources.\
 **Unified Advanced Hunting:** Can expose both types of data together when the required services, connectors, and permissions are available. (Image 17)
 
-**Step 12 — Examine Sentinel content**
+Step 12 — Examine Sentinel content
 
 I Click the arrow beside **Content management**.\
 Sentinel **Content management** contains:
@@ -184,7 +185,7 @@ The complete flow is:
 
 **Data connector → Sentinel table → analytics rule → alert → correlated incident → analyst investigation → automation/playbook response** (Image 19)
 
-**Step 14 — Explore security posture**
+Step 14 — Explore security posture
 
 I click **Exposure management** to expand it.
 
